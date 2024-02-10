@@ -1,6 +1,6 @@
-# GisGen V2: User Guide and README
+# GisGen: User Guide and README
 
-Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the harmonization of virus sequence metadata between GenBank and GISAID databases. This README provides comprehensive instructions on setting up your environment, running the **`New_GisGen_V2_testing_withTimer.py`** script, and utilizing GisGen for your research needs.
+Welcome to GisGen, the enhanced version of the GisGen tool designed for the harmonization of virus sequence metadata between GenBank and GISAID databases. This README provides comprehensive instructions on setting up your environment, running the **`GisGen_Run_withTimer.py`** script, and utilizing GisGen for your research needs.
 
 ## **Setting Up Your Environment**
 
@@ -18,7 +18,7 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
 
 ```
 
-1. **Download the YAML File**: Ensure you have the **`environment.yml`** file that was shared. This file contains all the necessary package information and Python version required for GisGen V2.
+1. **Download the YAML File**: Ensure you have the **`environment.yml`** file that was shared. This file contains all the necessary package information and Python version required for GisGen.
 2. **Install Anaconda or Miniconda**: If you haven't already, download and install Anaconda or Miniconda. Both are excellent choices for managing environments and packages; Anaconda includes a large number of pre-installed packages, while Miniconda is a minimal installer for those who prefer to install only what they need.
 3. **Create and Activate the Conda Environment**: Navigate to the directory containing the **`environment.yml`** file in your terminal or command prompt. Create the Conda environment by executing:
     
@@ -39,7 +39,7 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
     Replace **`gisgen_env`** with the actual name of your environment if it's different, as defined in the **`environment.yml`** file.
     
 
-## **Running `New_GisGen_V2_testing_withTimer.py`**
+## **Running `GisGen_Run_withTimer.py`**
 
 1. **Clone the Repository**: Clone the GisGen GitHub repository to your local machine:
     
@@ -55,17 +55,17 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
     cd GisGen
     ```
     
-2. **Execute the Script**: Run the **`New_GisGen_V2_testing_withTimer.py`** script:
+2. **Execute the Script**: Run the **`GisGen_Run_withTimer.py`** script:
     
     ```
     
-    python New_GisGen_V2_testing_withTimer.py
+    python GisGen_Run_withTimer.py
     ```
     
     This script includes a timer for performance benchmarking and will provide real-time updates on the process.
     
 
-## **Using GisGen V2**
+## **Using GisGen**
 
 ### **Step 1: Data Preparation**
 
@@ -73,7 +73,7 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
 
 ### **Step 2: Configuration**
 
-- Upon launching GisGen V2, you'll be prompted to configure settings such as the path to your data files and desired fuzzy matching parameters.
+- Upon launching GisGen, you'll be prompted to configure settings such as the path to your data files and desired fuzzy matching parameters.
 
 ### **Step 3: Running the Tool**
 
@@ -85,9 +85,9 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
 
 ### **Step 5: Reviewing Outputs**
 
-- Upon completion, GisGen V2 generates detailed reports, including **`GIS_GEN_final.csv`** and **`md5_results.csv`**, highlighting matches, discrepancies, and MD5 checksum validations.
+- Upon completion, GisGen generates detailed reports, including **`GIS_GEN_final.csv`** and **`md5_results.csv`**, highlighting matches, discrepancies, and MD5 checksum validations.
 
-# GisGen V2 Output files
+# GisGen Output files
 
 The GisGen pipeline, designed for the harmonization and analysis of virus sequence metadata between GenBank and GISAID databases, generates several key files as part of its output. Each file serves a specific purpose, providing valuable insights and data for epidemiological research. Below is a detailed report of the files produced by the GisGen pipeline and the contents of each.
 
@@ -136,4 +136,4 @@ The GisGen pipeline, designed for the harmonization and analysis of virus sequen
 - Ensure the GISAID FASTA folder is empty before adding the newly downloaded multi-sample FASTA file to prevent any processing errors.
 - Patience is required due to the tool's computational demands. The apparent unresponsiveness during heavy tasks is typical and does not indicate a crash.
 
-For any issues or further assistance, please contact the development team or refer to the extensive support resources available on the GitHub page. This guide is designed to facilitate a smooth and effective user experience with GisGen V2, ensuring accurate and efficient genomic data analysis for epidemiological research.
+For any issues or further assistance, please contact the development team or refer to the extensive support resources available on the GitHub page. This guide is designed to facilitate a smooth and effective user experience with GisGen, ensuring accurate and efficient genomic data analysis for epidemiological research.
