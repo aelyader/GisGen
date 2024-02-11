@@ -137,3 +137,7 @@ The GisGen pipeline, designed for the harmonization and analysis of virus sequen
 - Patience is required due to the tool's computational demands. The apparent unresponsiveness during heavy tasks is typical and does not indicate a crash.
 
 For any issues or further assistance, please contact the development team or refer to the extensive support resources available on the GitHub page. This guide is designed to facilitate a smooth and effective user experience with GisGen, ensuring accurate and efficient genomic data analysis for epidemiological research.
+
+# GisGen Flowchart
+
+![Alt text](https://github.com/aelyader/GisGen/blob/main/GisGen_flow.png)
