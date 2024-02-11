@@ -1,4 +1,4 @@
-<img src="https://github.com/aelyader/GisGen/blob/main/images/GisGen_logoFinal_2.png" width="400" height="300">
+<img src="https://github.com/aelyader/GisGen/blob/main/images/GisGen_logoFinal_2.png" width="500" height="500">
 
 # GisGen: User Guide and README
 
