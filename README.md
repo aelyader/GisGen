@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/aelyader/GisGen/blob/main/images/GisGen_logoFinal_2.png" width="500" height="500">
+  <img src="https://github.com/aelyader/GisGen/blob/main/images/Final_gisgen_logo_new.png" width="500" height="500">
 </p>
 
 <h1 align="center">GisGen: User Guide and README</h1>
