@@ -140,5 +140,5 @@ For any issues or further assistance, please contact the development team or ref
 
 # GisGen Flowchart
 
-<img src="https://github.com/aelyader/GisGen/blob/main/GisGen_flow.png" width="2000" height="1218">
+<img src="https://github.com/aelyader/GisGen/blob/main/GisGen_flow.png" width="2000" height="1000">
 
