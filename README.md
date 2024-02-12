@@ -31,7 +31,7 @@ Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the h
     
     ```
     
-    conda activate GisGen_env
+    conda activate GisGen-env
     ```
     
     Replace **`gisgen_env`** with the actual name of your environment if it's different, as defined in the **`environment.yml`** file.
