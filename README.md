@@ -1,8 +1,8 @@
+
+<h1 align="center">GisGen: User Guide and README</h1>
 <p align="center">
   <img src="https://github.com/aelyader/GisGen/blob/main/images/Final_gisgen_logo_new.png" width="500" height="500">
 </p>
-
-<h1 align="center">GisGen: User Guide and README</h1>
 
 Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the harmonization of virus sequence metadata between GenBank and GISAID databases. This README provides comprehensive instructions on setting up your environment, running the **`GisGen_Run_withTimer.py`** script, and utilizing GisGen for your research needs.
 
