@@ -62,6 +62,9 @@ Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the h
     
     This script includes a timer for performance benchmarking and will provide real-time updates on the process.
     
+<p align="center">
+  <img src="https://github.com/aelyader/GisGen/blob/main/images/GisGen_gui_cut.png" width="500" height="500">
+</p>
 
 
 ## **Using GisGen**
