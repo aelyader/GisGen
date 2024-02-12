@@ -16,12 +16,6 @@ Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the h
 
 ### **Using the YAML File for Environment Setup**
 
-```
-
-pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
-
-```
-
 1. **Download the YAML File**: Ensure you have the **`environment.yml`** file that was shared. This file contains all the necessary package information and Python version required for GisGen.
 2. **Install Anaconda or Miniconda**: If you haven't already, download and install Anaconda or Miniconda. Both are excellent choices for managing environments and packages; Anaconda includes a large number of pre-installed packages, while Miniconda is a minimal installer for those who prefer to install only what they need.
 3. **Create and Activate the Conda Environment**: Navigate to the directory containing the **`environment.yml`** file in your terminal or command prompt. Create the Conda environment by executing:
