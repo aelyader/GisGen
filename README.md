@@ -69,6 +69,7 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
     This script includes a timer for performance benchmarking and will provide real-time updates on the process.
     
 
+
 ## **Using GisGen**
 
 ### **Step 1: Data Preparation**
@@ -90,6 +91,8 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
 ### **Step 5: Reviewing Outputs**
 
 - Upon completion, GisGen generates detailed reports, including **`GIS_GEN_final.csv`** and **`md5_results.csv`**, highlighting matches, discrepancies, and MD5 checksum validations.
+
+
 
 # GisGen Output files
 
