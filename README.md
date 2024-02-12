@@ -28,7 +28,7 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
     
     ```bash
     
-    conda env create -f environment.yml
+    conda env create -f GisGen-env.yml
     ```
     
     This command creates a new environment named as specified in the **`environment.yml`** file, installing Python and all required packages in their specified versions.
@@ -37,7 +37,7 @@ pip install biopython pandas matplotlib seaborn pyside6 rapidfuzz
     
     ```
     
-    conda activate gisgen_env
+    conda activate GisGen_env
     ```
     
     Replace **`gisgen_env`** with the actual name of your environment if it's different, as defined in the **`environment.yml`** file.
