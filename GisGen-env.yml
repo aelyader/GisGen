@@ -22,32 +22,32 @@ dependencies:
   - wheel
   - xz
   - pip:
-      - biopython
-      - certifi
-      - charset-normalizer
-      - contourpy
-      - cycler
-      - fonttools
-      - idna
-      - kiwisolver
-      - matplotlib
-      - memory-profiler
-      - numpy
-      - packaging
+      - biopython==1.83
+      - certifi==2024.2.2
+      - charset-normalizer==3.3.2
+      - contourpy==1.2.0
+      - cycler==0.12.1
+      - fonttools==4.48.1
+      - idna==3.6
+      - kiwisolver==1.4.5
+      - matplotlib==3.8.2
+      - memory-profiler==0.61.0
+      - numpy==1.26.4
+      - packaging==23.2
       - pandas==2.2.0
-      - pillow
-      - py-spy
-      - pyparsing
-      - pyside6
-      - pyside6-addons
-      - pyside6-essentials
-      - python-dateutil
-      - pytz
-      - rapidfuzz
-      - requests
-      - seaborn
-      - shiboken6
-      - six
-      - tzdata
-      - urllib3
+      - pillow==10.2.0
+      - py-spy==0.3.14
+      - pyparsing==3.1.1
+      - pyside6==6.6.1
+      - pyside6-addons==6.6.1
+      - pyside6-essentials==6.6.1
+      - python-dateutil==2.8.2
+      - pytz==2024.1
+      - rapidfuzz==3.6.1
+      - requests==2.31.0
+      - seaborn==0.13.2
+      - shiboken6==6.6.1
+      - six==1.16.0
+      - tzdata==2024.1
+      - urllib3==2.2.0
 prefix: C:\Users\Amir\miniconda3\envs\GisGen-env
