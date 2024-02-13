@@ -692,7 +692,7 @@ class MainApplication(QWidget):
             print("The logo image was not found. Displaying placeholder text instead.")
             logo_label.setText("Logo Not Found")  # Placeholder text
         else:
-            logo_label.setPixmap(logo_pixmap.scaled(400, 400, Qt.KeepAspectRatio))
+            logo_label.setPixmap(logo_pixmap.scaled(200, 200, Qt.KeepAspectRatio))
 
         vertical_layout.addWidget(logo_label, alignment=Qt.AlignCenter)
 
