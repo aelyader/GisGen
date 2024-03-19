@@ -1,3 +1,15 @@
+"""
+File: GisGen_Run_withTimer.py
+Author: Amir Elyaderani
+Date: 2/14/2024
+Description: Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the harmonization of
+virus sequence metadata between GenBank and GISAID databases. This README provides comprehensive instructions
+on setting up your environment, running the GisGen_Run_withTimer.py script, and utilizing GisGen for your
+research needs.
+
+Copyright 2024 Amir Elyaderani ZooPhy lab
+License: GPL
+"""
 import hashlib
 import sys
 from Bio import SeqIO
@@ -21,6 +33,9 @@ import seaborn as sns
 import warnings
 from memory_profiler import profile
 import gc
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3 import Retry
 
 warnings.filterwarnings("ignore", category=FutureWarning, message="When grouping with a length-1 list-like")
 warnings.filterwarnings("ignore", category=FutureWarning, message="SeriesGroupBy.grouper is deprecated")
@@ -101,7 +116,8 @@ class WorkerThread(QThread):
         # Step 1: Reading the data
         self.custom_print("Step 1: Reading the data")
         tar_xz_directory = os.path.dirname(self.gisaid_data_file)
-
+        # Initialize GISAID as an empty DataFrame
+        GISAID = pd.DataFrame()
         # Define the data types for each column
         dtype_dict = {
             'Virus name': 'object',  # Keeping as object as it's likely a unique identifier or string
@@ -123,9 +139,9 @@ class WorkerThread(QThread):
             'AA Substitutions': 'object',  # Keeping as object if it's a complex string
             'Submission date': 'category',  # Consider parsing as datetime if needed
             'Is reference?': 'float32',  # Consider 'boolean' if it's just True/False
-            'Is complete?': 'category',  # Consider 'boolean' if it's just True/False
-            'Is high coverage?': 'category',  # Consider 'boolean' if it's just True/False
-            'Is low coverage?': 'category',  # Consider 'boolean' if it's just True/False
+            'Is complete?': 'category',
+            'Is high coverage?': 'category',
+            'Is low coverage?': 'category',
             'N-Content': 'float32',
             'GC-Content': 'float32'
         }
@@ -384,9 +400,41 @@ class WorkerThread(QThread):
                 md5_results[accession_id] = gisaid_md5
         self.progress_update.emit(55)
         # Download GenBank MD5 table
+        def check_network_connection(url):
+            try:
+                response = requests.head(url, timeout=5)
+                return response.ok
+            except requests.RequestException as e:
+                return False
+
+        def download_data_with_retry(url):
+            session = requests.Session()
+            retries = Retry(total=5, backoff_factor=1, status_forcelist=[502, 503, 504])
+            session.mount('http://', HTTPAdapter(max_retries=retries))
+            session.mount('https://', HTTPAdapter(max_retries=retries))
+
+            try:
+                self.custom_print("Attempting to download GenBank FASTA MD5 table...")
+                response = session.get(url)
+                response.raise_for_status()  # This will raise an HTTPError if the response was an error
+                return response.content
+            except requests.exceptions.HTTPError as errh:
+                self.custom_print("Http Error:", errh)
+            except requests.exceptions.ConnectionError as errc:
+                self.custom_print("Error Connecting:", errc)
+            except requests.exceptions.Timeout as errt:
+                self.custom_print("Timeout Error:", errt)
+            except requests.exceptions.RequestException as err:
+                self.custom_print("Oops: Something Else", err)
+
         self.custom_print("Step 11: Download GenBank FASTA MD5 table")
         genbank_md5_table_url = "https://zenodo.org/record/10578584/files/updated_genbank_sequences.csv"
-        genbank_md5_table = self.download_data(genbank_md5_table_url)
+        if check_network_connection(genbank_md5_table_url):
+            genbank_md5_table_content = download_data_with_retry(genbank_md5_table_url)
+            # Assuming genbank_md5_table_content is a CSV content, you would then load it into a DataFrame as before
+            genbank_md5_table = pd.read_csv(StringIO(genbank_md5_table_content.decode('utf-8')))
+        else:
+            self.custom_print("Network connection to GenBank MD5 table URL could not be established.")
         gc.collect()
         self.progress_update.emit(75)
         # Compare MD5 checksums

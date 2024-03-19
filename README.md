@@ -1,12 +1,14 @@
 
 <h1 align="center">GisGen: User Guide and README</h1>
 <p align="center">
-  <img src="https://github.com/aelyader/GisGen/blob/main/images/Final_gisgen_logo_new.png" width="500" height="500">
+  <img src="https://raw.githubusercontent.com/ZooPhy/GisGen/main/images/Final_gisgen_logo_new.jpg" width="420" height="400">
 </p>
 
 Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the harmonization of virus sequence metadata between GenBank and GISAID databases. This README provides comprehensive instructions on setting up your environment, running the **`GisGen_Run_withTimer.py`** script, and utilizing GisGen for your research needs.
 
 ## **Setting Up Your Environment**
+**YouTube Tutorial**
+[![GISGen Tutorial](https://raw.githubusercontent.com/ZooPhy/GisGen/main/images/youtube.png)](https://youtu.be/3xetKvKTg7k?si=ubghkih9JzXUJG8G "Click to watch the video")
 
 ### **Prerequisites**
 
@@ -14,31 +16,7 @@ Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the h
 - At least 32GB of RAM
 - CPU equivalent or better than Intel Core i7-11700K for optimal performance
 
-### **Using the YAML File for Environment Setup**
-
-1. **Download the YAML File**: Ensure you have the **`environment.yml`** file that was shared. This file contains all the necessary package information and Python version required for GisGen.
-2. **Install Anaconda or Miniconda**: If you haven't already, download and install Anaconda or Miniconda. Both are excellent choices for managing environments and packages; Anaconda includes a large number of pre-installed packages, while Miniconda is a minimal installer for those who prefer to install only what they need.
-3. **Create and Activate the Conda Environment**: Navigate to the directory containing the **`environment.yml`** file in your terminal or command prompt. Create the Conda environment by executing:
-    
-    ```bash
-    
-    conda env create -f GisGen-env.yml
-    ```
-    
-    This command creates a new environment named as specified in the **`environment.yml`** file, installing Python and all required packages in their specified versions.
-    
-4. **Activate the Environment**: Once the environment is successfully created, you can activate it using:
-    
-    ```
-    
-    conda activate GisGen-env
-    ```
-    
-    Replace **`gisgen_env`** with the actual name of your environment if it's different, as defined in the **`environment.yml`** file.
-    
-
-## **Running `GisGen_Run_withTimer.py`**
-
+### **Installation**
 1. **Clone the Repository**: Clone the GisGen GitHub repository to your local machine:
     
     ```bash
@@ -52,8 +30,29 @@ Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the h
     
     cd GisGen
     ```
+2. **Install [Anaconda](https://anaconda.org/anaconda "Anaconda") or [Miniconda](https://docs.anaconda.com/free/miniconda/index.html "Miniconda")**: If you haven't already, download and install Anaconda or Miniconda. Both are excellent choices for managing environments and packages; Anaconda includes a large number of pre-installed packages, while Miniconda is a minimal installer for those who prefer to install only what they need.
+3. **Create and Activate the Conda Environment**: Navigate to the home directory *GisGen* containing the **`GisGen-env.yml`** file in your terminal or command prompt. Create the Conda environment by executing:
     
-2. **Execute the Script**: Run the **`GisGen_Run_withTimer.py`** script:
+    ```bash
+    
+    conda env create -f GisGen-env.yml
+    ```
+    
+    This command creates a new environment named as specified in the **`GisGen-env.yml`** file, installing Python and all required packages in their specified versions.
+    
+4. **Activate the Environment**: Once the environment is successfully created, you can activate it using:
+    
+    ```
+    
+    conda activate GisGen-env
+    ```
+    
+    Replace **`gisgen_env`** with the actual name of your environment if it's different, as defined in the **`GisGen-env.yml`** file.
+    
+
+## **Running `GisGen`**
+    
+1. **Execute the Script**: Run the **`GisGen_Run_withTimer.py`** script:
     
     ```
     
@@ -63,7 +62,7 @@ Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the h
     This script includes a timer for performance benchmarking and will provide real-time updates on the process.
     
 <p align="center">
-  <img src="https://github.com/aelyader/GisGen/blob/main/images/GisGen_gui_cut.png" width="300" height="580">
+  <img src="https://raw.githubusercontent.com/ZooPhy/GisGen/main/images/GisGen_gui_cut.jpg" width="300" height="580">
 </p>
 
 
@@ -144,6 +143,6 @@ For any issues or further assistance, please contact the development team or ref
 
 # GisGen Flowchart
 
-<img src="https://github.com/aelyader/GisGen/blob/main/images/GisGen_flow.png" width="1800" height="700">
+<img src="https://raw.githubusercontent.com/ZooPhy/GisGen/main/images/GisGen_flow.png" width="1800" height="700">
 
 
