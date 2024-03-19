@@ -44,6 +44,6 @@ GisGen stands as a testament to the advancements in genomic data analysis tools,
 
 ## **Availability**
 
-GisGen is freely available on GitHub, ensuring its accessibility to the wider research community. For detailed information on implementation and source code, users are encouraged to visit [GisGen on GitHub](https://github.com/ZooPhy).
+GisGen is freely available on GitHub, ensuring its accessibility to the wider research community. For detailed information on implementation and source code, https://github.com/aelyader/GisGen
 
-For further assistance and support, users can contact Dr. Matthew Scotch via email at matthew.scotch@asu.edu or Amir Elyaderani via email at aelyader@asu.edu. Supplementary data and tutorials are available online to facilitate the use and understanding of GisGen.
+For further assistance and support, users can contact Amir Elyaderani via email at aelyader@asu.edu. Supplementary data and tutorials are available online to facilitate the use and understanding of GisGen.
