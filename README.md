@@ -1,14 +1,14 @@
 
 <h1 align="center">GisGen: User Guide and README</h1>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ZooPhy/GisGen/main/images/Final_gisgen_logo_new.jpg" width="420" height="400">
+  <img src="https://raw.githubusercontent.com/aelyader/GisGen/main/images/Final_gisgen_logo_new.jpg" width="420" height="400">
 </p>
 
 Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the harmonization of virus sequence metadata between GenBank and GISAID databases. This README provides comprehensive instructions on setting up your environment, running the **`GisGen_Run_withTimer.py`** script, and utilizing GisGen for your research needs.
 
 ## **Setting Up Your Environment**
 **YouTube Tutorial**
-[![GISGen Tutorial](https://raw.githubusercontent.com/ZooPhy/GisGen/main/images/youtube.png)](https://youtu.be/3xetKvKTg7k?si=ubghkih9JzXUJG8G "Click to watch the video")
+[![GISGen Tutorial](https://raw.githubusercontent.com/aelyader/GisGen/main/images/youtube.png)](https://youtu.be/3xetKvKTg7k?si=ubghkih9JzXUJG8G "Click to watch the video")
 
 ### **Prerequisites**
 
@@ -62,7 +62,7 @@ Welcome to GisGen V2, the enhanced version of the GisGen tool designed for the h
     This script includes a timer for performance benchmarking and will provide real-time updates on the process.
     
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ZooPhy/GisGen/main/images/GisGen_gui_cut.jpg" width="300" height="580">
+  <img src="https://raw.githubusercontent.com/aelyader/GisGen/main/images/GisGen_gui_cut.jpg" width="300" height="580">
 </p>
 
 
