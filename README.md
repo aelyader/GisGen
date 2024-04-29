@@ -143,6 +143,6 @@ For any issues or further assistance, please contact the development team or ref
 
 # GisGen Flowchart
 
-<img src="https://raw.githubusercontent.com/ZooPhy/GisGen/main/images/GisGen_flow.png" width="1800" height="700">
+<img src="https://raw.githubusercontent.com/aelyader/GisGen/main/images/GisGen_flow.png" width="1800" height="700">
 
 
