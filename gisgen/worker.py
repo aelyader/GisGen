@@ -16,6 +16,13 @@ from rapidfuzz import fuzz
 from requests.adapters import HTTPAdapter
 from urllib3 import Retry
 
+try:
+    from memory_profiler import profile
+except ImportError:
+    def profile(func):
+        return func
+
+
 
 class WorkerThread(QThread):
     update_message = Signal(str)
@@ -625,3 +632,4 @@ class WorkerThread(QThread):
         except Exception as e:
             self.custom_print(f"An error occurred: {e}")
             return None
+
